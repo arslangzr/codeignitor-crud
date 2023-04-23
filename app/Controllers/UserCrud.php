@@ -36,7 +36,7 @@ class UserCrud extends Controller
     {
         $userModel = new UserModel();
         $data['user_obj'] = $userModel->where('id', $id)->first();
-        return view('edit_user', $data);
+        return view('edit_view', $data);
     }
     // update user data
     public function update()
